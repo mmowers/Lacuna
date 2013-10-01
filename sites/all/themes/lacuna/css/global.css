@@ -5,14 +5,49 @@ body{
   background-color: #F8F8F8;
 }
 #page-wrapper{
-  width: 1000px;
+  max-width: 1200px;
   padding: 15px;
   margin: auto;
   position: relative;
   background-color: white;
+  box-shadow: 0px 0px 10px #888888;
   /*border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;  */
 }
+h1{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+h2{
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+h3{
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+h4{
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+h5{
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+dt{
+  margin-top: 10px;
+}
+a{
+  color: #8c3292;
+}
+label{
+  margin-bottom: 10px;
+}
+#page-title{
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
 .breadcrumb{
   display: none;
 }
@@ -30,6 +65,128 @@ ul.menu li:hover{
 ul.menu li a{
   text-decoration: none;
 }
+ul.tabs.primary{
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+ul.tabs.primary li{
+  /*overflow: hidden;*/
+  float: left;
+}
+ul.tabs.primary a{
+  padding: 5px 10px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #78cefd;
+  opacity: 0.8;
+  color: black;
+  display: block;
+  border-style: solid;
+  border-bottom-color: transparent;
+}
+/*ul.tabs.primary li.active a{
+  border-style: solid solid none;
+}*/
+ul.tabs.primary a:hover{
+  background-color: white;
+}
+.field{
+  margin-bottom: 30px;
+}
+.field-label{
+  margin-bottom: 10px;
+}
+.submitted{
+  font-style: italic;
+  font-size: 0.9em;
+}
+#comments{
+  margin-top: 40px;
+}
+#comments .title{
+  margin-top: 40px;
+}
+.node div.content{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*this is from bootstrap but isn't used right now*/
+.bootstrap-btn{
+    background-color: #49AFCD;
+    background-image: linear-gradient(to bottom, #5BC0DE, #2F96B4);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: black;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#blog-node-form #edit-body-und-0-format,
+#comment-form #edit-comment-body-und-0-format{
+  display: none;
+}
+
+.forum-table-superheader{
+  display: none;
+}
+.forum-table thead tr th{
+  height: 20px;
+  vertical-align: middle;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.forum-table tbody tr{
+  background-color:#92a6c4;
+  opacity: .8;
+}
+.forum-table tbody tr td{
+  padding: 10px;
+}
+.forum-list-legend-item{
+  font-style: italic;
+}
+#forum-statistics{
+  margin-top: 40px;
+}
+#forum-statistics-header{
+  font-weight: bold;
+}
+#forum-statistics-statistics-header{
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#biblio-header{
+  margin: 20px;
+}
+#biblio-header a{
+  margin-right: 10px;
+}
+.biblio-alpha-line{
+  margin-top: 10px;
+}
+.biblio-separator-bar{
+  background-color: #92a6c4;
+  border: none;
+}
+
+
 
 /*Most of the following taken from stark*/
 #content,
@@ -98,23 +255,38 @@ body.two-sidebars #sidebar-first {
   position: absolute;
   top:15px;
   right:60px;
-  box-shadow: 5px 5px 5px #888888;
+  /*box-shadow: 5px 5px 5px #888888;*/
   font-size: 0.9em;
   /*font-weight: bold;*/
-  border: 1px solid lightgray;
+  /*border: 1px solid lightgray;*/
 }
 #block-menu-menu-top-right li{
   float: left;
   padding: 15px;
-  border-right: 1px solid lightgray;
+  /*border-right: 1px solid lightgray;*/
   margin: 0;
 }
-#block-menu-menu-top-right li:hover{
+#block-menu-menu-top-right li a{
+  color: black;
+}
+#block-menu-menu-top-right a[href='/topics'].active{
+  color: #fd7954;
+}
+#block-menu-menu-top-right li:hover a[href='/topics']{
+  color: #fd7954;
+}
+#block-menu-menu-top-right a[href='/sewing-kit'].active{
+  color: #78cefd;
+}
+#block-menu-menu-top-right li:hover a[href='/sewing-kit']{
+  color: #78cefd;
+}
+/*#block-menu-menu-top-right li:hover{
   box-shadow: 5px -5px 5px #888888;
 }
 #block-menu-menu-top-right li.last{
   border-right: none;
-}
+}*/
 
 #truth-movement-img{
   width: 150px;
@@ -123,7 +295,7 @@ body.two-sidebars #sidebar-first {
 }
 
 #block-menu-menu-left-menu{
-  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 2px 2px 2px #888888;
   font-size: 0.9em;
   /*font-weight: bold;*/
   border: 1px solid lightgray;
@@ -135,12 +307,21 @@ body.two-sidebars #sidebar-first {
   border-bottom: 1px solid lightgray;
   margin: 0;
 }
-#block-menu-menu-left-menu li:hover{
+#block-menu-menu-left-menu a{
+  color: black;
+}
+#block-menu-menu-left-menu a[href='/documents'].active{
+  color: #88b551;
+}
+#block-menu-menu-left-menu li:hover a[href='/documents']{
+  color: #88b551;
+}
+/*#block-menu-menu-left-menu li:hover{
   box-shadow: -5px 5px 5px #888888;
 }
 #block-menu-menu-left-menu li.last{
   border-bottom: none;
-}
+}*/
 
 .view-resources img{
   width: auto;
