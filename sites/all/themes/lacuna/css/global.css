@@ -260,16 +260,16 @@ body.two-sidebars #sidebar-first {
   /*font-weight: bold;*/
   /*border: 1px solid lightgray;*/
 }
-#block-menu-menu-top-right li{
+#block-menu-menu-top-right .content .menu li{
   float: left;
   padding: 15px;
   /*border-right: 1px solid lightgray;*/
   margin: 0;
 }
-#block-menu-menu-top-right li a{
+#block-menu-menu-top-right .content .menu li a{
   color: black;
 }
-#block-menu-menu-top-right a[href='/topics'].active{
+/*#block-menu-menu-top-right a[href='/topics'].active{
   color: #fd7954;
 }
 #block-menu-menu-top-right li:hover a[href='/topics']{
@@ -281,7 +281,7 @@ body.two-sidebars #sidebar-first {
 #block-menu-menu-top-right li:hover a[href='/sewing-kit']{
   color: #78cefd;
 }
-/*#block-menu-menu-top-right li:hover{
+#block-menu-menu-top-right li:hover{
   box-shadow: 5px -5px 5px #888888;
 }
 #block-menu-menu-top-right li.last{
@@ -302,26 +302,59 @@ body.two-sidebars #sidebar-first {
   width: 150px;
   margin-top: 50px;
 }
-#block-menu-menu-left-menu li{
+#block-menu-menu-left-menu .content .menu li{
   padding: 15px;
   border-bottom: 1px solid lightgray;
   margin: 0;
 }
-#block-menu-menu-left-menu a{
+#block-menu-menu-left-menu .content .menu li a{
   color: black;
 }
-#block-menu-menu-left-menu a[href='/documents'].active{
+/*#block-menu-menu-left-menu a[href='/documents'].active{
   color: #88b551;
 }
 #block-menu-menu-left-menu li:hover a[href='/documents']{
   color: #88b551;
 }
-/*#block-menu-menu-left-menu li:hover{
+#block-menu-menu-left-menu li:hover{
   box-shadow: -5px 5px 5px #888888;
 }
 #block-menu-menu-left-menu li.last{
   border-bottom: none;
 }*/
+
+/*menu item colors, classes added in lacuna.js. not the best way of doing this...*/
+#page-wrapper #page li:hover .lacuna-color-orange,
+#page-wrapper #page .active.lacuna-color-orange{
+  color: #fd7954;
+}
+#page-wrapper #page li:hover .lacuna-color-light-blue,
+#page-wrapper #page .active.lacuna-color-light-blue{
+  color: #78cefd;
+}
+#page-wrapper #page li:hover .lacuna-color-dark-blue,
+#page-wrapper #page .active.lacuna-color-dark-blue{
+  color: #1588ba;
+}
+#page-wrapper #page li:hover .lacuna-color-light-grey,
+#page-wrapper #page .active.lacuna-color-light-grey{
+  color: #92a6c4;
+}
+#page-wrapper #page li:hover .lacuna-color-dark-grey,
+#page-wrapper #page .active.lacuna-color-dark-grey{
+  color: #39404a;
+}
+#page-wrapper #page li:hover .lacuna-color-green,
+#page-wrapper #page .active.lacuna-color-green{
+  color: #88b551;
+}
+#page-wrapper #page li:hover .lacuna-color-purple,
+#page-wrapper #page .active.lacuna-color-purple{
+  color: #8c3292;
+}
+
+
+
 
 .view-resources img{
   width: auto;
