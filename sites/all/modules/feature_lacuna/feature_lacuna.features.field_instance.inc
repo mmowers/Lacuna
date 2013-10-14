@@ -302,6 +302,56 @@ function feature_lacuna_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-document-field_doc_cover_image'
+  $field_instances['node-document-field_doc_cover_image'] = array(
+    'bundle' => 'document',
+    'deleted' => 0,
+    'description' => 'Add an image for this document, typically a book cover.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_doc_cover_image',
+    'label' => 'Cover Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'covers',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
       'weight' => 1,
     ),
   );
@@ -852,9 +902,11 @@ function feature_lacuna_field_default_field_instances() {
   t('A link to the full bibliographic information for this video. If none exists, <a href="http://www.lacunastories.com/drupal/node/add/biblio">add one here</a>.');
   t('A reference to the bibliographic metadata about this image. If none exists, <a href="http://www.lacunastories.com/drupal/node/add/biblio">add one here</a>.');
   t('A transcription of the audio.');
+  t('Add an image for this document, typically a book cover.');
   t('Attachments');
   t('Audio');
   t('Bibliographic Information');
+  t('Cover Image');
   t('Data about reviews of this document.');
   t('Document Type');
   t('Genre');

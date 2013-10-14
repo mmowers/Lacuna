@@ -10,24 +10,6 @@
 function feature_lacuna_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: menu-left-menu:<front>
-  $menu_links['menu-left-menu:<front>'] = array(
-    'menu_name' => 'menu-left-menu',
-    'link_path' => '<front>',
-    'router_path' => '',
-    'link_title' => 'Responses',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-  );
   // Exported menu link: menu-left-menu:biblio
   $menu_links['menu-left-menu:biblio'] = array(
     'menu_name' => 'menu-left-menu',
@@ -81,6 +63,24 @@ function feature_lacuna_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -45,
+  );
+  // Exported menu link: menu-left-menu:node/2
+  $menu_links['menu-left-menu:node/2'] = array(
+    'menu_name' => 'menu-left-menu',
+    'link_path' => 'node/2',
+    'router_path' => 'node/%',
+    'link_title' => 'Responses',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
   );
   // Exported menu link: menu-left-menu:node/9
   $menu_links['menu-left-menu:node/9'] = array(
@@ -190,24 +190,6 @@ function feature_lacuna_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -47,
   );
-  // Exported menu link: menu-top-right:user/login
-  $menu_links['menu-top-right:user/login'] = array(
-    'menu_name' => 'menu-top-right',
-    'link_path' => 'user/login',
-    'router_path' => 'user/login',
-    'link_title' => 'Login',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-  );
   // Exported menu link: menu-top-right:user/logout
   $menu_links['menu-top-right:user/logout'] = array(
     'menu_name' => 'menu-top-right',
@@ -232,7 +214,6 @@ function feature_lacuna_menu_default_menu_links() {
   t('Documents');
   t('Forum');
   t('Help');
-  t('Login');
   t('Logout');
   t('My Account');
   t('Responses');

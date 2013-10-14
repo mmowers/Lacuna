@@ -51,6 +51,9 @@ label{
 .breadcrumb{
   display: none;
 }
+.form-item{
+  margin-top: 30px;
+}
 ul.menu{
   list-style-type: none;
 }
@@ -390,4 +393,44 @@ body.two-sidebars #sidebar-first {
 .page-resources #page-title{
   font-weight: bolder;
   margin-bottom: 0px;
+}
+
+
+
+.view-documents img{
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0px 0px 10px #888888;
+}
+
+.view-documents .views-row{
+  float: left;
+  width: 150px;
+  margin: 20px;
+}
+.view-documents .views-exposed-widget{
+  margin-top: 15px;
+}
+.view-documents .views-exposed-widget>label,
+.view-documents .form-item-sort-by>label{
+  float: left;
+  margin-right: 10px;
+}
+.view-documents .views-widget{
+  display: inline;
+}
+.view-documents .form-type-bef-checkbox{
+  float: left;
+  margin: 0px 5px 0px 10px;
+  font-size: 0.95em;
+  color: grey;
+}
+.view-documents .form-item-sort-by select{
+}
+.view-documents .views-field-title{
+  font-size: 0.9em;
+  text-align: center;
+  padding-top: 5px;
 }
