@@ -43,13 +43,10 @@ a{
   text-decoration: none;
 }
 a:hover{
-  color: #094762;
+  color: #78cefd;
 }
 label{
   margin-bottom: 10px;
-}
-input{
-  max-width: 100%;
 }
 input[checked='checked']{
   background-color: blue;
@@ -117,7 +114,6 @@ ul.tabs.primary a.active, ul.tabs.primary a:hover{
   font-style: italic;
   font-size: 0.9em;
 }
-
 #comments{
   margin-top: 40px;
 }
@@ -159,8 +155,7 @@ ul.tabs.primary a.active, ul.tabs.primary a:hover{
     vertical-align: middle;
 }*/
 
-.lacuna-button,
-.form-submit{
+.lacuna-button, #edit-reset{
   background-color: #c4df2c;
   background-image: linear-gradient(to bottom, #c4df2c, #88b551);
   background-repeat: repeat-x;
@@ -181,17 +176,12 @@ ul.tabs.primary a.active, ul.tabs.primary a:hover{
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 0;
-  padding: 4px 6px;
+  padding: 4px 12px;
   text-align: center;
   vertical-align: middle;
   font-weight: normal;
-  width: 135px;
-  margin-right: 5px;
 }
-.lacuna-button:hover,
-.lacuna-button:focus,
-.form-submit:hover,
-.form-submit:focus{
+.lacuna-button:hover, #edit-reset:hover, .lacuna-button:focus, #edit-reset:focus{
   background-color: #88b551;
   color: #FFFFFF;
   background-position: 0 -15px;
@@ -202,26 +192,21 @@ ul.tabs.primary a.active, ul.tabs.primary a:hover{
   background-color: #78cefd;
   background-image: linear-gradient(to bottom, #78cefd, #1588ba);
 }
-.lacuna-button.lacuna-button-blue:hover,
-.lacuna-button.lacuna-button-blue:focus{
+.lacuna-button.lacuna-button-blue:hover, .lacuna-button.lacuna-button-blue:focus{
   background-color: #1588ba;
 }
 .lacuna-button a{
   color: #FFFFFF;
 }
-.form-submit{
+#edit-reset{
+  margin-top:-50px;
+  margin-right: 80px;
+  float: right;
   background-color: #92a6c4;
   background-image: linear-gradient(to bottom, #92a6c4, #39404a);
 }
-.form-submit:hover,
-.form-submit:focus{
+#edit-reset:hover, #edit-reset:focus{
   background-color: #39404a;
-}
-.view-documents #edit-reset.form-submit,
-.view-your-story #edit-reset.form-submit{
-  margin-top: -40px;
-  margin-right: 80px;
-  float: right;
 }
 
 #blog-node-form #edit-body-und-0-format,
@@ -345,7 +330,7 @@ body.two-sidebars #sidebar-first {
   right:60px;
   /*box-shadow: 5px 5px 5px #888888;*/
   font-size: 0.9em;
-  font-weight: 500;
+  /*font-weight: bold;*/
   /*border: 1px solid lightgray;*/
 }
 #block-menu-menu-top-right .content .menu li{
@@ -356,12 +341,6 @@ body.two-sidebars #sidebar-first {
 }
 #block-menu-menu-top-right .content .menu li a{
   color: black;
-}
-#block-menu-menu-top-right .content .menu li a:hover{
-  color: #fd7954;
-}
-#block-menu-menu-top-right .content .menu li a.active{
-  color: #fd7954;
 }
 /*#block-menu-menu-top-right a[href='/topics'].active{
   color: #fd7954;
@@ -393,7 +372,7 @@ body.two-sidebars #sidebar-first {
   font-size: 0.9em;
   /*font-weight: bold;*/
   border: 1px solid lightgray;
-  width: 175px;
+  width: 150px;
   margin-top: 20px;
 }
 #block-menu-menu-left-menu .content .menu li{
@@ -403,12 +382,6 @@ body.two-sidebars #sidebar-first {
 }
 #block-menu-menu-left-menu .content .menu li a{
   color: black;
-}
-#block-menu-menu-left-menu .content .menu li a:hover{
-  color: #88b551;
-}
-#block-menu-menu-left-menu .content .menu li a.active{
-  color: #88b551;
 }
 /*#block-menu-menu-left-menu a[href='/documents'].active{
   color: #88b551;
@@ -424,7 +397,7 @@ body.two-sidebars #sidebar-first {
 }*/
 
 /*menu item colors, classes added in lacuna.js. not the best way of doing this...*/
-/*#page-wrapper #page li:hover .lacuna-color-orange,
+#page-wrapper #page li:hover .lacuna-color-orange,
 #page-wrapper #page .active.lacuna-color-orange{
   color: #fd7954;
 }
@@ -451,7 +424,7 @@ body.two-sidebars #sidebar-first {
 #page-wrapper #page li:hover .lacuna-color-purple,
 #page-wrapper #page .active.lacuna-color-purple{
   color: #8c3292;
-}*/
+}
 
 .views-exposed-form .views-exposed-widget{
   clear: both;
@@ -491,6 +464,7 @@ body.two-sidebars #sidebar-first {
   color: #1588BA;
 }
 
+
 .view-documents img,
 .view-your-story img{
   width: auto;
@@ -500,21 +474,16 @@ body.two-sidebars #sidebar-first {
   box-shadow: 0px 0px 10px #888888;
 }
 
-.view-documents .views-row{
+.view-documents .views-row,
+.view-your-story .views-row{
   float: left;
   width: 150px;
   margin: 20px;
   height: 320px;
 }
-.view-your-story .views-row{
-  float: left;
-  width: 150px;
-  margin: 20px;
-  height: 280px;
-}
 .view-documents .views-exposed-widget,
 .view-your-story .views-exposed-widget{
-  margin-top: 0px;
+  margin-top: 15px;
 }
 .view-documents .views-exposed-widget>label,
 .view-documents .form-item-sort-by>label,
@@ -534,12 +503,12 @@ body.two-sidebars #sidebar-first {
   font-size: 0.95em;
   color: grey;
 }
-/*.view-documents .views-field-title,
+.view-documents .views-field-title,
 .view-your-story .views-field-title{
   font-size: 0.9em;
   text-align: center;
   padding-top: 5px;
-}*/
+}
 
 strong {
   font-weight: bold;
@@ -574,38 +543,7 @@ ol, ul {
   min-width: 150px;
   font-weight: bold;
 }
-#biblio-search-form #edit-filters--2{
-  float: none;
-}
-#biblio-search-form #edit-filters--2 .form-item{
-  clear: both;
-}
-#biblio-search-form #edit-search-form legend{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#biblio-search-form #edit-search-form #edit-filters{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-ul.secondary a.active {
-    border-bottom: none;
-}
-ul.secondary li a{
-    color: #808080;
-}
-ul.secondary li.active a{
-    color: #1588BA;
-}
-a.popup-element-title,
-a.popup-element-title:hover,
-a.popup-element-title:active{
-  color: #92a6c4;
-  cursor: default;
-}
-.form-managed-file .form-submit{
-  margin-left: 5px;
-}
+
 /*div#add-your-story {
 	-moz-box-shadow:inset 0px 0px 0px 0px #caefab;
 	-webkit-box-shadow:inset 0px 0px 0px 0px #caefab;

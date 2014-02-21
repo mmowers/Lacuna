@@ -10,7 +10,7 @@
       
       //Adding classes to menu items for coloring. This is a hack, but I haven't yet thought
       //of a better way within drupal to do this...
-      $("#block-menu-menu-top-right .content .menu li a").each(function(index){
+      /*$("#block-menu-menu-top-right .content .menu li a").each(function(index){
         var menu_text = $(this).text();
         switch(menu_text)
         {
@@ -58,8 +58,10 @@
         default:
           $(this).addClass("lacuna-color-light-grey");
         }
-      });
-
+      });*/
+      
+      //$('.page-forum #page-title').after('<a href="../node/add/forum/1" class="lacuna-button lacuna-button-blue">Make new topic</a>');
+      
       /*var color_array_menu_top=["orange","light-blue","dark-blue","green","purple","light-grey"];
       $("#block-menu-menu-top-right .content .menu li a").each(function(index){
         $(this).addClass("lacuna-color-"+color_array_menu_top[index%color_array.length]);
